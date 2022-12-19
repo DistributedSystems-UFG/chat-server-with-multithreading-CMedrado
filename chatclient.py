@@ -21,7 +21,7 @@ class RecvHandler(threading.Thread):
         conn.close()
     return # We need a condition for graceful termination
 
-me = str(sys.argv[1]) # User's name (as registered in the registry. E.g., Alice, Bob, ...)
+me = str(sys.argv[0]) # User's name (as registered in the registry. E.g., Alice, Bob, ...)
 client_sock = socket(AF_INET, SOCK_STREAM) # socket for server to connect to this client
 my_ip = const.registry[me][0]   # If using a proper naming service, client should know its
 my_port = const.registry[me][1] # addresses (which it would register in the ns)
