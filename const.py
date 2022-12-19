@@ -1,4 +1,4 @@
-CHAT_SERVER_HOST = "172.31.19.220"
+CHAT_SERVER_HOST = "172.31.90.170"
 CHAT_SERVER_PORT = 4567
 
 # IDs de usuários registrados com os respectivos endereços IP e números de porta
